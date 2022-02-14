@@ -1,0 +1,24 @@
+footer{
+  margin-top: 1.25em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  .text{
+    text-align: center;
+    padding: 10px;
+  }
+  .social{
+   
+    display: flex;
+    justify-content:space-around;
+    .social-logo{
+      width: 50px;
+      &:hover {
+       
+        transform: scale(1.75);
+        -webkit-transition:  transform 0.7s ease-in-out;
+      }
+    }
+  }
+  
+}

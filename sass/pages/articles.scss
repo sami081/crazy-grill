@@ -1,0 +1,41 @@
+@media only screen and (max-width: 1020px){
+article {
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+ 
+  
+}
+}
+@media only screen and (min-width: 1020px){
+  article{
+    margin-top: 10px;
+    
+  
+      
+     
+      div{
+    
+    width: 90%;
+   
+      }
+    }
+  }
+
+article {
+  display: flex;
+  section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  div {
+    margin: 5px;
+    background: rgb(214, 211, 211);
+    border-radius: 0.5em;
+    p{
+      text-align: justify;
+      padding: 2px;
+    }
+  }
+}

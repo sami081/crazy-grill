@@ -1,0 +1,50 @@
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  h1 {
+    text-align: center;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+  }
+  nav {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 10px;
+    width: 100%;
+    a {
+      color: black;
+      background: rgb(202, 198, 198);
+      border-radius: 0.5em;
+      width: 4em;
+      text-align: center;
+
+      &:hover {
+        background: blueviolet;
+        transform: scale(1.25);
+        -webkit-transition: background 0.5s ease-in-out, transform 0.7s ease-in-out;
+      }
+    }
+  }
+  .baniere{
+    width: 85%;
+    border-radius: 0.5em;
+    
+    img{
+      width: 100%;
+      border-radius: 0.5em;
+      
+    }
+  }
+}
+
+@media only screen and (min-width: 750px){
+  .baniere{
+    height: 200px;
+    img{
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+}

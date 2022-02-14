@@ -1,0 +1,190 @@
+@font-face {
+  font-family: "AlegreyaSans";
+  src: url(ressources/Font-family/AlegreyaSans-Regular.otf) format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+body {
+  min-width: 320px;
+  background: ivory;
+  margin: 0;
+  font-family: "AlegreyaSans";
+}
+body a {
+  text-decoration: none;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+header h1 {
+  text-align: center;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+header nav {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 10px;
+  width: 100%;
+}
+header nav a {
+  color: black;
+  background: #cac6c6;
+  border-radius: 0.5em;
+  width: 4em;
+  text-align: center;
+}
+header nav a:hover {
+  background: blueviolet;
+  transform: scale(1.25);
+  -webkit-transition: background 0.5s ease-in-out, transform 0.7s ease-in-out;
+}
+header .baniere {
+  width: 85%;
+  border-radius: 0.5em;
+}
+header .baniere img {
+  width: 100%;
+  border-radius: 0.5em;
+}
+
+@media only screen and (min-width: 750px) {
+  .baniere {
+    height: 200px;
+  }
+  .baniere img {
+    height: 100%;
+    object-fit: cover;
+  }
+}
+footer {
+  margin-top: 1.25em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+footer .text {
+  text-align: center;
+  padding: 10px;
+}
+footer .social {
+  display: flex;
+  justify-content: space-around;
+}
+footer .social .social-logo {
+  width: 50px;
+}
+footer .social .social-logo:hover {
+  transform: scale(1.75);
+  -webkit-transition: transform 0.7s ease-in-out;
+}
+
+@media only screen and (max-width: 1020px) {
+  article {
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+}
+@media only screen and (min-width: 1020px) {
+  article {
+    margin-top: 10px;
+  }
+  article div {
+    width: 90%;
+  }
+}
+article {
+  display: flex;
+}
+article section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+article div {
+  margin: 5px;
+  background: #d6d3d3;
+  border-radius: 0.5em;
+}
+article div p {
+  text-align: justify;
+  padding: 2px;
+}
+
+@media only screen and (max-width: 520px) {
+  .Menu {
+    height: 1700px;
+    display: flex;
+    flex-direction: column;
+  }
+  .Menu h2 {
+    text-align: center;
+  }
+  .Menu .all-card {
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  .Menu .all-card .card {
+    display: flex;
+    margin: 10px;
+    background: #d6d3d3;
+    border-radius: 0.5em;
+  }
+  .Menu .all-card .card img {
+    border-radius: 0.5em 0 0 0.5em;
+  }
+  .Menu .all-card .card .information-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5px;
+    justify-content: center;
+  }
+}
+@media only screen and (min-width: 521px) {
+  .Menu {
+    display: flex;
+    flex-direction: column;
+  }
+  .Menu h2 {
+    margin: 15px;
+    text-align: center;
+  }
+  .Menu .all-card {
+    display: flex;
+    justify-content: space-around;
+  }
+  .Menu .all-card .card {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    background: #d6d3d3;
+    border-radius: 0.5em;
+  }
+  .Menu .all-card .card img {
+    width: 100%;
+    border-radius: 0.5em 0.5em 0 0;
+  }
+  .Menu .all-card .card .information-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .Menu .all-card .card .information-card .description-entree {
+    text-align: center;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
