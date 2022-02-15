@@ -1,0 +1,14 @@
+.send{
+  background: rgb(255, 164, 119);
+  border: none;
+  height: 4em;
+  border-radius: 2em;
+  color: antiquewhite;
+  font-weight: 900;
+  width: 10em;
+  &:hover{
+    background: rgb(209, 155, 55);
+    transform: scale(1.25);
+    -webkit-transition: background 0.5s ease-in-out, transform 0.7s ease-in-out;
+  }
+}
