@@ -55,7 +55,7 @@
             <input type="email" required id="email" name="email" />
           </div>
           <div>
-            <label for="lasttname">Votre nom:</label>
+            <label for="lastname">Votre nom:</label>
             <input type="text" required id="lastname" name="lastname" />
           </div>
           <div>
@@ -68,15 +68,16 @@
             <input
               type="date"
               id="start"
-              name="trip-start"
+              name="reservation"
               value="2022-03-01"
               min="2022-03-01"
+              required
             />
           </div>
           <div>
-            <label for="hour">heure
-            <select name="hour" id="hour">
-              <option value="hour-select">
+            <label for="hour" >heure
+            <select name="hour" id="hour" required>
+              <option value="hour-select" >
                 <option value="11">11:00</option>
                 <option value="12">12:00</option>
                 <option value="13">13:00</option>
@@ -101,9 +102,9 @@
           </div>
           <div>
             <label for="message">Votre message</label>
-            <textarea name="message" required id="message"></textarea>
+            <textarea name="message"  id="message"></textarea>
           </div>
-          <input type="submit" class="send" name="valider">
+          <button type="submit" class="send" name="valider">Envoyer</button>
         </form>
       </div>
     </section>
