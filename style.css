@@ -178,6 +178,7 @@ article div p {
   }
   .Menu .all-card .card img {
     border-radius: 0.5em 0 0 0.5em;
+    width: 50%;
   }
   .Menu .all-card .card .information-card {
     display: flex;
