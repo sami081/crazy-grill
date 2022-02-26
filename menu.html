@@ -12,12 +12,17 @@
     <title>le menu de Crazy grill</title>
   </head>
   <body>
-    <header>
-      <h1>notre carte</h1>
+    <header >
+      <div class="header-div">
+      <a href="index.html" title="Accueil">Accueil</a>
+      <h1>Crazy Grill <br />Notre Carte</h1>
+
+      <a href="contact.html" title="Nous contacter">Contact</a>
+</div>
       <nav>
-        <a href="index.html" title="Accueil">Accueil</a>
-        <a href="menu.html" title="Voir le menu" id="menu">Menu</a>
-        <a href="contact.html" title="Nous contacter">Contact</a>
+        <a href="#entree">entrées</a>
+        <a href="#plats">Nos plats</a>
+        <a href="#dessert">Nos dessert</a>
       </nav>
       <div class="baniere">
         <img
@@ -27,7 +32,7 @@
       </div>
     </header>
     <section class="Menu">
-      <h2>Nos entrées</h2>
+      <h2 id="entree">Nos entrées</h2>
       <div class="all-card">
         <div class="card">
           <img src="./ressources/img/salade.jpg" alt="salade" />
@@ -36,34 +41,45 @@
             <p class="description-entree">
               salade péprarer par notre chef avec des produits de saisons
             </p>
-            <span class="Price">10.90 €</span>
+            <span class="Price">.90 €</span>
           </div>
         </div>
         <div class="card">
-          <img src="./ressources/img/salade_au_saumon_grille_800.jpg" alt="salade" />
+          <img
+            src="./ressources/img/salade_au_saumon_grille_800.jpg"
+            alt="salade"
+          />
           <div class="information-card">
             <h3 class="name-card">Saumon grillé</h3>
             <p class="description-entree">
-              salade péprarer par notre chef avec des produits de saisons
+              Dos de saumon grillé au barbecue accompagné de tomates cerises sur
+              son lit de celeries.
             </p>
-            <span class="Price">10.90 €</span>
+            <span class="Price">12.90 €</span>
           </div>
         </div>
         <div class="card">
-          <img src="./ressources/img/brochette de poulet.webp" alt="salade du chef" />
+          <img
+            src="./ressources/img/brochette de poulet.webp"
+            alt="salade du chef"
+          />
           <div class="information-card">
             <h3 class="name-card">brochette de poulet</h3>
             <p class="description-entree">
-              salade péprarer par notre chef avec des produits de saisons
+              Brochette de poulet mariné moutarde miel, accompagné de sa salade
+              de pomme de terre.
             </p>
-            <span class="Price">10.90 €</span>
+            <span class="Price">11.90 €</span>
           </div>
         </div>
       </div>
-      <h2>Nos plats</h2>
+      <h2 id="plats">Nos plats</h2>
       <div class="all-card">
         <div class="card">
-          <img src="./ressources/img/agneau a l'etat sauvage.jpg" alt="salade" />
+          <img
+            src="./ressources/img/agneau a l'etat sauvage.jpg"
+            alt="salade"
+          />
           <div class="information-card">
             <h3 class="name-card">agneau a l'etat sauvage</h3>
             <p class="description-entree">
@@ -93,7 +109,7 @@
           </div>
         </div>
       </div>
-      <h2>Nos dessert</h2>
+      <h2 id="dessert">Nos dessert</h2>
       <div class="all-card">
         <div class="card">
           <img src="./ressources/img/salade.jpg" alt="salade" />
@@ -152,7 +168,5 @@
         /></a>
       </div>
     </footer>
-
-    <script src="./index.js"></script>
   </body>
 </html>

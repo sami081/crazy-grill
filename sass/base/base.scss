@@ -11,6 +11,17 @@ body {
   font-family: "AlegreyaSans";
   a {
     text-decoration: none;
+    color: black;
+    background: rgb(202, 198, 198);
+    border-radius: 0.5em;
+    width: 4em;
+    text-align: center;
+
+    &:hover {
+      background: blueviolet;
+      transform: scale(1.25);
+      -webkit-animation: background 5s ease-in-out, transform 6s ease-in-out;
+    }
   }
 }
 * {
@@ -32,6 +43,7 @@ body {
   .title-load {
     font-size: xx-large;
     padding-bottom: 10px;
+    text-align: center;
   }
   .load {
     display: inline-block;

@@ -13,18 +13,12 @@ header {
     justify-content: space-around;
     margin-bottom: 10px;
     width: 100%;
-    a {
-      color: black;
-      background: rgb(202, 198, 198);
-      border-radius: 0.5em;
+   
+    .a {
       width: 4em;
-      text-align: center;
-
-      &:hover {
-        background: blueviolet;
-        transform: scale(1.25);
-        -webkit-transition: background 0.5s ease-in-out, transform 0.7s ease-in-out;
-      }
+    }
+    .b{
+      width: 24em;
     }
   }
   .baniere{
@@ -37,6 +31,12 @@ header {
       
     }
   }
+}
+.header-div {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
 }
 
 @media only screen and (min-width: 750px){

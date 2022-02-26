@@ -12,6 +12,16 @@ body {
 }
 body a {
   text-decoration: none;
+  color: black;
+  background: #cac6c6;
+  border-radius: 0.5em;
+  width: 4em;
+  text-align: center;
+}
+body a:hover {
+  background: blueviolet;
+  transform: scale(1.25);
+  -webkit-animation: background 5s ease-in-out, transform 6s ease-in-out;
 }
 
 * {
@@ -35,6 +45,7 @@ body a {
 .load-body .title-load {
   font-size: xx-large;
   padding-bottom: 10px;
+  text-align: center;
 }
 .load-body .load {
   display: inline-block;
@@ -66,17 +77,11 @@ header nav {
   margin-bottom: 10px;
   width: 100%;
 }
-header nav a {
-  color: black;
-  background: #cac6c6;
-  border-radius: 0.5em;
+header nav .a {
   width: 4em;
-  text-align: center;
 }
-header nav a:hover {
-  background: blueviolet;
-  transform: scale(1.25);
-  -webkit-transition: background 0.5s ease-in-out, transform 0.7s ease-in-out;
+header nav .b {
+  width: 24em;
 }
 header .baniere {
   width: 85%;
@@ -85,6 +90,13 @@ header .baniere {
 header .baniere img {
   width: 100%;
   border-radius: 0.5em;
+}
+
+.header-div {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
 }
 
 @media only screen and (min-width: 750px) {
