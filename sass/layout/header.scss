@@ -12,13 +12,32 @@ header {
     display: flex;
     justify-content: space-around;
     margin-bottom: 10px;
-    width: 100%;
+    width: 50%;
+    background: antiquewhite;
+    align-items: center;
+    border-radius: 1em;
+    a{
+      height: 33px;
+      h3{
+        height: 23px;
+        align-self: center;
+      }
+    }
    
     .a {
-      width: 4em;
+    //  width: 4em;
     }
     .b{
-      width: 24em;
+      width: 14em;
+      display: flex;
+      justify-content: space-around;
+    }
+    .nav{
+      display: flex;
+      justify-content: space-around;
+      width: 100%;
+      text-align: center;
+      height: 100px;
     }
   }
   .baniere{
@@ -29,6 +48,13 @@ header {
       width: 100%;
       border-radius: 0.5em;
       
+    }
+  }
+  .nav-menu{
+    width: 100%;
+    a{
+      display: flex;
+      align-items: center;
     }
   }
 }
@@ -46,5 +72,18 @@ header {
       height: 100%;
       object-fit: cover;
     }
+  }
+  .nav-menu{
+    width: 50% !important;
+  }
+ 
+}
+@media only screen and (max-width: 750px){
+  .d{
+    display: none;
+    
+  }
+  .b{
+    width: 4em;
   }
 }

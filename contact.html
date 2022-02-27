@@ -17,7 +17,7 @@
       <nav>
         <a href="index.html" title="Accueil">Accueil</a>
         <a href="menu.html" title="Voir le menu">Menu</a>
-        <a href="contact.html" title="Nous contacter">Contact</a>
+      
       </nav>
       <div class="baniere">
         <img
@@ -27,7 +27,8 @@
       </div>
     </header>
     <section class="contact">
-      <div>
+      <div class="information">
+      <div class="adress">
         <h2>Où nous trouver</h2>
         <p>
           123 rue des peuplier <br />
@@ -40,30 +41,36 @@
           ></iframe>
         </p>
       </div>
-      <div class="hourly">
+      <div class="adress">
         <h2>Horaire d'ouverture</h2>
         <p>
           Du lundi au dimanche <br />
           de 11h00 à 15h00 et de 18h00 à 01h00
         </p>
+        <img src="./ressources/img/shop.jpg" alt="magasin" class="shop">
       </div>
+      </div>
+      
       <div class="hourly form">
         <h2>Réserver une table</h2>
         <form action="form.php" method="POST">
-          <div>
-            <label for="email">Votre email</label>
-            <input type="email" required id="email" name="email" />
+          <div class="bloc-information">
+          <div class="div-form">
+            <label for="email">Votre email :</label>
+            <input type="email" id="email" name="email" required />
           </div>
-          <div>
-            <label for="lastname">Votre nom:</label>
-            <input type="text" required id="lastname" name="lastname" />
+          <div class="div-form">
+            <label for="lastname">Votre nom :</label>
+            <input type="text" id="lastname" name="lastname" required/>
           </div>
-          <div>
-            <label for="firstname">Votre prénom</label>
-            <input type="text" required id="firstname" name="firstname" />
+          <div class="div-form">
+            <label for="firstname">Votre prénom : </label>
+            <input type="text" id="firstname" name="firstname" required />
           </div>
-          <div>
-            <label for="start">Date de réservation:</label>
+          </div>
+          <div class="bloc-reservation">
+          <div class="div-form">
+            <label for="start">Date de réservation :</label>
 
             <input
               type="date"
@@ -74,8 +81,8 @@
               required
             />
           </div>
-          <div>
-            <label for="hour" >heure
+          <div class="div-form">
+            <label for="hour" >heure :
             <select name="hour" id="hour" required>
               <option value="hour-select" >
                 <option value="11">11:00</option>
@@ -95,14 +102,19 @@
 
             
           </div>
-          <div>
-            <label for="telNo">Votre téléphone:</label>
+          <div class="div-form">
+            <label for="telNo">Votre téléphone :</label>
             <input id="telNo" name="telNo" type="tel"
             placeholder="01 23 45 67 89" required>
           </div>
-          <div>
-            <label for="message">Votre message</label>
-            <textarea name="message"  id="message"></textarea>
+          <div class="div-form">
+            <label for="number">Nombre de personne :</label> 
+            <input type="number" name="number" id="number" min="1" max="10" width="6em">
+          </div>
+          <div class="div-form">
+            <label for="message">Votre message :</label>
+            <textarea name="message"  id="message" class="bloc-text"></textarea>
+          </div>
           </div>
           <button type="submit" class="send" name="valider">Envoyer</button>
         </form>
@@ -134,5 +146,6 @@
         /></a>
       </div>
     </footer>
+    <script src="./javascript/contact.js"></script>
   </body>
 </html>

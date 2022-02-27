@@ -4,7 +4,7 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    height: 750px;
+   
     div {
       display: flex;
       flex-direction: column;
@@ -13,6 +13,7 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+        text-align: center;
       }
     }
     form {
@@ -20,6 +21,7 @@
       display: flex;
       flex-direction: column;
       justify-content: space-around;
+      align-items: center;
       textarea {
         height: 100px;
         width: 250px;
@@ -64,32 +66,58 @@
     margin-top: 20px;
     display: flex;
     justify-content: space-around;
-    flex-wrap: wrap;
+    flex-direction: column;
     align-items: flex-start;
-    div{
-      display: flex;
-    flex-direction: column;
-    align-items: center;
-    min-height: 217px;
-    margin: 5px ;
-p{
-  display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-    }
-    .form{
-      width: 800px;
+    .information {
       display: flex;
       justify-content: space-around;
-      form{
+      width: 100%;
+      align-items: flex-start;
+      .adress {
+        flex-direction: column;
+        justify-items: center;
+      }
+    }
+    div {
+      display: flex;
+      // flex-direction: column;
+      align-items: center;
+      // min-height: 217px;
+      margin: 5px;
+      p {
         display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+    }
+    .form {
+      flex-direction: column;
+      display: flex;
+      justify-content: space-around;
+      align-self: center;
+      form {
+        display: flex;
+        align-items: center;
         justify-content: space-around;
         width: 100%;
+       flex-direction: column;
+        .div-form {
+          display: flex;
+          flex-direction: column;
+          label {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+          }
+        }
+        input{
+          text-align: center;
+        }
       }
-  }
-  
-  
+      .bloc-text{
+        // height: 50px;
+      }
     }
   }
-
+}

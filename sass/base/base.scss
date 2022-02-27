@@ -12,15 +12,17 @@ body {
   a {
     text-decoration: none;
     color: black;
-    background: rgb(202, 198, 198);
     border-radius: 0.5em;
-    width: 4em;
+display: flex;
     text-align: center;
 
     &:hover {
-      background: blueviolet;
+      background: #d6d3d3;
       transform: scale(1.25);
       -webkit-animation: background 5s ease-in-out, transform 6s ease-in-out;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
     }
   }
 }
@@ -51,10 +53,22 @@ body {
     height: 30px;
     vertical-align: middle;
     border: 4px solid #181818;
-border-radius: 100%;
+    border-radius: 100%;
     animation: bloc 3s;
     -moz-animation: bloc 3s;
     -webkit-animation: bloc 3s;
     -o-animation: bloc 3s;
   }
+}
+h3{
+  display: flex;
+  flex-direction: column;
+}
+input{
+  text-align: center;
+}
+label{
+display: flex;
+flex-direction: column;
+text-align: center;
 }
