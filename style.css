@@ -1,6 +1,17 @@
 @font-face {
+  font-family: "ChunkFive";
+  src: url(../../ressources/Font-family/ChunkFive-Regular.otf) format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "ALexBrush";
+  src: url(../../ressources/Font-family/AlexBrush-Regular.ttf) format("truetype");
+  font-weight: bolder;
+}
+@font-face {
   font-family: "AlegreyaSans";
-  src: url(ressources/Font-family/AlegreyaSans-Regular.otf) format("truetype");
+  src: url(../../ressources/Font-family/AlegreyaSans-Regular.otf) format("truetype");
   font-weight: normal;
   font-style: normal;
 }
@@ -8,7 +19,7 @@ body {
   min-width: 320px;
   background: ivory;
   margin: 0;
-  font-family: "AlegreyaSans";
+  font-family: "AlexBrush";
 }
 body a {
   text-decoration: none;
@@ -16,6 +27,7 @@ body a {
   border-radius: 0.5em;
   display: flex;
   text-align: center;
+  align-items: center;
 }
 body a:hover {
   background: #d6d3d3;
@@ -77,6 +89,14 @@ label {
   text-align: center;
 }
 
+h1 {
+  font-family: "ChunkFive";
+}
+
+p {
+  font-family: "AlegreyaSans";
+}
+
 header {
   display: flex;
   flex-direction: column;
@@ -98,11 +118,13 @@ header nav {
   border-radius: 1em;
 }
 header nav a {
-  height: 33px;
+  height: 53px;
+  font-size: 30px;
 }
 header nav a h3 {
   height: 23px;
   align-self: center;
+  font-size: 30px;
 }
 header nav .b {
   width: 14em;
@@ -159,6 +181,10 @@ header .nav-menu a {
 
   .b {
     width: 4em;
+  }
+
+  header nav {
+    width: 90%;
   }
 }
 footer {

@@ -17,10 +17,12 @@ header {
     align-items: center;
     border-radius: 1em;
     a{
-      height: 33px;
+      height: 53px;
+      font-size: 30px;
       h3{
         height: 23px;
         align-self: center;
+        font-size: 30px;
       }
     }
    
@@ -86,4 +88,10 @@ header {
   .b{
     width: 4em;
   }
+  header{
+    nav{
+      width: 90%;
+    }
+  }
 }
+
