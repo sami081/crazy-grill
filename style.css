@@ -136,7 +136,6 @@ header nav .nav {
   justify-content: space-around;
   width: 100%;
   text-align: center;
-  height: 100px;
 }
 header .baniere {
   width: 85%;
@@ -301,7 +300,7 @@ article div p {
     border-radius: 0.5em;
   }
   .Menu .all-card .card img {
-    height: 60%;
+    height: 70%;
     width: 100%;
     border-radius: 0.5em 0.5em 0 0;
     object-fit: cover;
@@ -320,6 +319,19 @@ article div p {
   -moz-animation: fadein 2.5s;
   -webkit-animation: fadein 2.5s;
   -o-animation: fadein 2.5s;
+}
+
+.d {
+  color: blue;
+  height: 0.5em;
+  width: 3em;
+}
+.d:hover {
+  background: whitesmoke;
+}
+
+.b {
+  height: 0.2em;
 }
 
 @media only screen and (max-width: 550px) {
