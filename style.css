@@ -1,4 +1,10 @@
 @font-face {
+  font-family: "Shrikhand";
+  src: url(../../ressources/Font-family/chunkfive/Chunk-Five-Print.ttf) format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
   font-family: "ALexBrush";
   src: url(../ressources/Font-family/AlexBrush-Regular.ttf) format("truetype");
   font-weight: bolder;
