@@ -3,9 +3,9 @@ let n = document.querySelector(".nav")
 let a = document.querySelector("h3")
 
 let createNav = function(){
-  n.innerHTML = ` <a href="menu.html#entree" title="Voir les entree" class="d"> entree</a>
+  n.innerHTML = ` <a href="menu.html#entree" title="Voir les entree" class="d"> entrées</a>
   <a href="menu.html#plats" title="Voir le menu" class = "d"> plats</a>
-  <a href="menu.html#dessert" title="Voir le menu" class="d"> dessert</a>`
+  <a href="menu.html#dessert" title="Voir le menu" class="d"> desserts</a>`
   a.classList.remove("a")
   a.classList.add("b")
 
